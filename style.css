@@ -1,0 +1,13 @@
+html{
+    font-size: 10px;
+    background: url("src/img/drum.png") ;
+    background-color:rgb(23, 31, 34);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}

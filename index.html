@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Kit de bateria personal (KBD-Drum-Kit)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Mi kit de bateria inicial!</h1>
+    <div class="keys">
+        <div data-key="97" class="keys"><kbd>A</kbd><span class="sound">Tom1</span></div>
+        <div data-key="115" class="keys"><kbd>S</kbd><span class="sound">tom2</span></div>
+        <div data-key="100" class="keys"><kbd>D</kbd><span class="sound">snare</span></div>
+        <div data-key="102" class="keys"><kbd>F</kbd><span class="sound">crash</span></div>
+        <div data-key="103" class="keys"><kbd>G</kbd><span class="sound">open hat</span></div>
+        <div data-key="104" class="keys"><kbd>H</kbd><span class="sound">clap</span></div>
+        <div data-key="106" class="keys"><kbd>J</kbd><span class="sound">kick</span></div>
+        <div data-key="107" class="keys"><kbd>K</kbd><span class="sound">hithat</span></div>
+    </div>
+
+    <audio src="src/sounds/tom1.wav" data-key="97"></audio>
+    <audio src="src/sounds/tom2.wav" data-key="115"></audio>
+    <audio src="src/sounds/snare.wav" data-key="100"></audio>
+    <audio src="src/sounds/crash.wav" data-key="102"></audio>
+    <audio src="src/sounds/openhat.wav" data-key="103"></audio>
+    <audio src="src/sounds/clap.wav" data-key="104"></audio>
+    <audio src="src/sounds/kick.wav" data-key="106"></audio>
+    <audio src="src/sounds/hh.wav" data-key="107"></audio>
+</body>
+</html>
