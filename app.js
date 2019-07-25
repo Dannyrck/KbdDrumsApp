@@ -1,5 +1,14 @@
-console.log("Hola mundo, Todo esta funcionando perfectamente");
-window.addEventListener("keypress", (e) => {
+console.log('Hola mundo, Todo esta funcionando perfectamente');
+window.addEventListener('keypress', playSound);
+
+function removeTransition(e){
+
+    if(e.propertyName !== "transform") return; // salimos de la funcion si no es transform
+    // console.log(this);
+    this.classList.remove('playing');
+}
+
+    function playSound(e){
     // console.log(e.keyCode);
     // const audio = document.querySelectorAll("audio");
     const audio = document.querySelector(`audio[data-key='${e.keyCode}']`);
@@ -8,4 +17,13 @@ window.addEventListener("keypress", (e) => {
     audio.play();
     // console.log(audio);
 
-} );
+    const key = document.querySelector(`div.key[data-key='${e.keyCode}']`);
+    key.classList.add('playing');
+} 
+
+document.onreadystatechange = function(){
+    if(document.readyState == "interactive") {
+        const keys = document.querySelectorAll('.key');
+        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+    }
+}

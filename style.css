@@ -17,7 +17,7 @@ h1{
 }
 .keys{
     display: flex;
-    min-height: 100vh;
+    min-height: 90vh;
     align-items: center;
     justify-content: center;
 }
@@ -51,4 +51,15 @@ kbd{
     text-transform: uppercase;
     letter-spacing: .3rem;
     color: #34dea3;
+}
+div.foo{
+    font-size: 1.8rem;
+    text-align: center;
+    color: antiquewhite;
+    display: flex-end;
+}
+
+div.foo,a{
+    color: aliceblue;
+    font-size: 1.8rem;
 }
