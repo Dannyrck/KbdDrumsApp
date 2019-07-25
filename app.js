@@ -1,4 +1,4 @@
-console.log('Hola mundo, Todo esta funcionando perfectamente');
+console.log('¡Hey no deberías de estar aquí!... Descuida, todo esta funcionando perfectamente 😉');
 window.addEventListener('keypress', playSound);
 
 function removeTransition(e){
